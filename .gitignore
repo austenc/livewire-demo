@@ -1,5 +1,9 @@
+.DS_Store
 /node_modules
 /public/hot
+/public/css
+/public/js
+/public/mix-manifest.json
 /public/storage
 /storage/*.key
 /vendor
