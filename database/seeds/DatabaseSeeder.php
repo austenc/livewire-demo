@@ -11,6 +11,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        for ($i = 0; $i < 50; $i++) {
+            factory(App\Subscriber::class)->create([
+                'confirmed_at' => rand(0, 1) ? now() : null
+            ]);
+        }
     }
 }

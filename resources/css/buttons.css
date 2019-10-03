@@ -1,0 +1,11 @@
+.btn-details {
+    @apply flex justify-center p-2 pr-1 mt-2;
+}
+
+.dot {
+    @apply w-2 h-2 bg-gray-400 rounded-full mr-1;
+}
+
+.btn-details:hover .dot {
+    @apply bg-gray-600;
+}
