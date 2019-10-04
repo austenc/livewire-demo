@@ -6,6 +6,7 @@
 @import 'buttons';
 @import 'tables';
 @import 'dropdowns';
+@import 'pagination';
 
 @import 'tailwindcss/utilities';
 

@@ -65,6 +65,8 @@
                     @endforeach
                 </tbody>
             </table>
+
+            {{ $subscribers->links() }}
         </div>
         <script src="{{ mix('js/app.js') }}"></script>
     </body>
