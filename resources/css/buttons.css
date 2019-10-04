@@ -1,5 +1,5 @@
 .btn-details {
-    @apply flex justify-center p-2 pr-1 mt-2;
+    @apply flex justify-start items-center w-8 h-8;
 }
 
 .dot {

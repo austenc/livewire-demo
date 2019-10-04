@@ -1,0 +1,19 @@
+.dropdown {
+    & .dropdown-menu {
+        @apply hidden;
+    }
+    &.open .dropdown-menu {
+        @apply block;
+    }
+    &.open .dot {
+        @apply bg-gray-700;
+    }
+
+    & .overlay {
+        @apply hidden fixed top-0 left-0 w-full h-full bg-black opacity-25;
+    }
+
+    &.open .overlay {
+        @apply block;
+    }
+}

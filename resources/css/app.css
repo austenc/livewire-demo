@@ -2,7 +2,12 @@
 
 @import 'tailwindcss/components';
 
+/* Include component CSS */
 @import 'buttons';
 @import 'tables';
+@import 'dropdowns';
 
 @import 'tailwindcss/utilities';
+
+/* Include any custom utilities here */
+@import 'utilities';
