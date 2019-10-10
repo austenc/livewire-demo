@@ -12,5 +12,5 @@
 */
 
 Route::get('/', function () {
-    return view('welcome')->withSubscribers(App\Subscriber::paginate());
+    return view('welcome')->withSubscribers(App\Subscriber::paginate(8));
 });

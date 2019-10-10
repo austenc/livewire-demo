@@ -15,7 +15,7 @@
                         <th>Name</th>
                         <th>Location</th>
                         <th>Confirmed?</th>
-                        <th>Actions</th>
+                        <th class="text-right">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -39,7 +39,7 @@
                                 @endif
                             </td>
                             <td class="actions">
-                               
+
                                 <div class="dropdown flex flex-col items-end">
                                     <a href="#subscriber-edit" class="btn-details">
                                         <div class="dot"></div>
