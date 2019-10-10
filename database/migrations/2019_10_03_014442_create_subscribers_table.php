@@ -17,6 +17,8 @@ class CreateSubscribersTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('email');
+            $table->string('city')->nullable();
+            $table->string('state')->nullable();
             $table->timestamp('confirmed_at')->nullable();
             $table->string('avatar_url')->nullable();
             $table->timestamps();
