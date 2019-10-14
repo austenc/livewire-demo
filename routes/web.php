@@ -12,5 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome')->withSubscribers(App\Subscriber::paginate(8));
+
+    $search = request('search');
+    $subscribers = App\Subscriber::when($search, function ($query, $search) {
+        return $query->where('name', 'LIKE', '%' . $search . '%');
+    })->paginate(8);
+    return view('welcome')->withSubscribers($subscribers);
 });

@@ -9,6 +9,7 @@
     </head>
     <body class="font-sans antialiased text-gray-700 bg-gray-100">
         <div class="p-4 container mx-auto">
+            <form action="/" method="GET">
             <h3 class="text-2xl text-gray-600 mb-5">Subscribers</h3>
             <div class="flex justify-between items-center text-sm">
                 <div>
@@ -19,7 +20,10 @@
                     </select>
                 </div>
                 <div class="flex items-center">
-                    <input type="text" class="bg-white rounded p-2 border border-gray-300" placeholder="Search">
+                    <input type="text" name="search"
+                        class="bg-white rounded p-2 border border-gray-300" placeholder="Search"
+                        value="{{ request('search', old('search')) }}"
+                    >
                     <button type="submit" class="rounded bg-purple-500 hover:bg-purple-700 text-gray-200 ml-1 p-2">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="block w-6 h-6 fill-current text-white"><circle cx="10" cy="10" r="7" class="text-transparent" /><path d="M16.32 14.9l1.1 1.1c.4-.02.83.13 1.14.44l3 3a1.5 1.5 0 0 1-2.12 2.12l-3-3a1.5 1.5 0 0 1-.44-1.14l-1.1-1.1a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/></svg>
                     </button>
@@ -83,6 +87,7 @@
             </table>
 
             {{ $subscribers->links() }}
+            </form>
         </div>
         <script src="{{ mix('js/app.js') }}"></script>
     </body>
